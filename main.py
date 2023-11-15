@@ -3,6 +3,6 @@ import view
 import controller
 
 while True:
-    model.matimatika()
+    # model.matimatika()
     view.ekran()
     controller.allsobitiya()
