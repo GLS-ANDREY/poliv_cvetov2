@@ -1,8 +1,10 @@
 import model
 import view
 import controller
+import time
 
 while True:
-    # model.matimatika()
+    time.sleep(1/100)
+    model.ekran2()
     view.ekran()
     controller.allsobitiya()

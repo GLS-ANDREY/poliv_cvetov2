@@ -1,6 +1,5 @@
 import pygame
-
-import view
+import model
 
 
 def allsobitiya():
@@ -8,5 +7,7 @@ def allsobitiya():
     for a in s:
         if a.type == pygame.QUIT:
             exit()
+        if a.type == pygame.KEYDOWN and a.key == pygame.K_DOWN:
+            model.speed()
         if a.type == pygame.KEYDOWN and a.key == pygame.K_UP:
-            view.xz()
+            model.speed2()

@@ -1,5 +1,5 @@
 import pygame
-import time
+import random
 import model
 
 v = pygame.image.load("voda.png")
@@ -8,19 +8,16 @@ ck = pygame.image.load("krasniy_cvetok.png")
 vv = pygame.transform.scale(v, [75, 100])
 kc = pygame.transform.scale(ck, [100, 200])
 jc = pygame.transform.scale(cj, [100, 200])
-k = 1
-def xz():
-    global k
-    k = k + 30
+
+
 def ekran():
-    global k
-    time.sleep(0.010)
-    k = k + 1
-    e.blit(jc,[100,300])
-    e.blit(kc,[0,300])
-    e.blit(vv, [75, k])
+    display.fill([0, 0, 0])
+    vvv = pygame.transform.scale(v,[model.rect.width,model.rect.height])
+    display.blit(jc, [100, 300])
+    display.blit(kc, [0, 300])
+    display.blit(vvv, [model.rect.x, model.rect.top])
+    # pygame.draw.rect(display,[140,209,243],model.rect,4)
     pygame.display.flip()
-    e.fill([0,0,0])
 
 
-e = pygame.display.set_mode([200, 500])
+display = pygame.display.set_mode([200, 500])
