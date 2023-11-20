@@ -10,7 +10,7 @@ def speed2():
     rect.centery -= 50
 
 def ekran2():
-    rect.centery += 3
+    rect.centery += 1
     if rect.top >= 550:
         rect.centery -= 750
         rect.x = random.randint(50,150)

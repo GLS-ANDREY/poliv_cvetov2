@@ -8,11 +8,15 @@ ck = pygame.image.load("krasniy_cvetok.png")
 vv = pygame.transform.scale(v, [75, 100])
 kc = pygame.transform.scale(ck, [100, 200])
 jc = pygame.transform.scale(cj, [100, 200])
-
+t = 220
 
 def ekran():
+    global t
     display.fill([0, 0, 0])
-    vvv = pygame.transform.scale(v,[model.rect.width,model.rect.height])
+    vvv = pygame.transform.scale(v, [model.rect.width, model.rect.height])
+    if model.rect.bottom >= 500 and model.rect.top <= 500:
+        t += 2
+        pygame.display.set_mode([t, 500])
     display.blit(jc, [100, 300])
     display.blit(kc, [0, 300])
     display.blit(vvv, [model.rect.x, model.rect.top])
