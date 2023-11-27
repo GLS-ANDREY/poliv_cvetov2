@@ -7,5 +7,4 @@ while True:
     time.sleep(1/100)
     model.ekran2()
     view.ekran()
-    model.op()
     controller.allsobitiya()
