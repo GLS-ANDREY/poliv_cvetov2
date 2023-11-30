@@ -5,6 +5,8 @@ import time
 
 while True:
     time.sleep(1/100)
-    model.ekran2()
+    model.kaply()
     view.ekran()
     controller.allsobitiya()
+    model.yc()
+    model.rc()

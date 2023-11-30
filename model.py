@@ -1,6 +1,8 @@
 import pygame
 import random
 rect = pygame.Rect([75,-200,75,100])
+rectyc = pygame.Rect([100,300,100,200])
+rectrc = pygame.Rect([0,300,100,200])
 t = 200
 
 def speed():
@@ -9,7 +11,7 @@ def speed():
 def speed2():
     rect.centery -= 50
 
-def ekran2():
+def kaply():
     global t
     rect.centery += 3
     if rect.bottom >= 500 and rect.top <= 500:
@@ -22,3 +24,15 @@ def ekran2():
         rect.height = random.randint(10,75)
         rect.width = random.randint(10,75)
 
+def yc():
+    rectyc.bottom = 500
+    if rect.bottom >= 500 and rect.top <= 500:
+        rectyc.height += 1
+        rectyc.width += 1
+        rectyc.x += 1
+
+def rc():
+    rectrc.bottom = 500
+    if rect.bottom >= 500 and rect.top <= 500:
+        rectrc.height += 1
+        rectrc.width += 1
