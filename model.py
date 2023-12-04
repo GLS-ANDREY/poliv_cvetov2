@@ -25,14 +25,21 @@ def kaply():
         rect.width = random.randint(10,75)
 
 def yc():
-    rectyc.bottom = 500
     if rect.bottom >= 500 and rect.top <= 500:
-        rectyc.height += 1
+        rectyc.height += 2
         rectyc.width += 1
         rectyc.x += 1
+        rectyc.bottom = 500
+    if rectyc.top <= 0 and rect.bottom >= 500 and rect.top <= 500:
+        rectyc.height -= 2
+        rectyc.width -= 1
+        rectyc.x -= 1
 
 def rc():
-    rectrc.bottom = 500
     if rect.bottom >= 500 and rect.top <= 500:
-        rectrc.height += 1
+        rectrc.height += 2
         rectrc.width += 1
+        rectrc.bottom = 500
+    if rectrc.top <= 0 and rect.bottom >= 500 and rect.top <= 500:
+        rectrc.height -= 2
+        rectrc.width -= 1

@@ -17,9 +17,9 @@ def ekran():
     display.blit(yc, [model.rectyc.x, model.rectyc.top])
     display.blit(rc, [model.rectrc.x, model.rectrc.top])
     display.blit(vvv, [model.rect.x, model.rect.top])
-    # pygame.draw.rect(display,[140,209,243],model.rect,4)
-    # pygame.draw.rect(display,[219,16,0],model.rectyc,4)
-    # pygame.draw.rect(display,[219,16,0],model.rectrc,4)
+    pygame.draw.rect(display,[140,209,243],model.rect,4)
+    pygame.draw.rect(display,[219,16,0],model.rectyc,4)
+    pygame.draw.rect(display,[219,16,0],model.rectrc,4)
     pygame.display.flip()
 
 

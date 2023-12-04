@@ -13,4 +13,6 @@ def allsobitiya():
             model.speed2()
         if a.type == pygame.KEYDOWN and a.key == pygame.K_s:
             pygame.display.set_mode([200, 700])
+        if a.type == pygame.KEYDOWN and a.key == pygame.K_w:
+            pygame.display.set_mode([700, 700])
 
