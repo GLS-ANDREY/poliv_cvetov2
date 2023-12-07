@@ -14,7 +14,7 @@ def speed2():
 def kaply():
     global t
     rect.centery += 3
-    if rect.bottom >= 500 and rect.top <= 500:
+    if rect.bottom >= 500 and rect.top <= 500 and rectyc.top > 0:
         t += 2
         pygame.display.set_mode([t, 500])
     p = t - rect.width
@@ -25,21 +25,14 @@ def kaply():
         rect.width = random.randint(10,75)
 
 def yc():
-    if rect.bottom >= 500 and rect.top <= 500:
+    if rect.bottom >= 500 and rect.top <= 500 and rectyc.top > 0:
         rectyc.height += 2
         rectyc.width += 1
         rectyc.x += 1
         rectyc.bottom = 500
-    if rectyc.top <= 0 and rect.bottom >= 500 and rect.top <= 500:
-        rectyc.height -= 2
-        rectyc.width -= 1
-        rectyc.x -= 1
 
 def rc():
-    if rect.bottom >= 500 and rect.top <= 500:
+    if rect.bottom >= 500 and rect.top <= 500 and rectrc.top > 0:
         rectrc.height += 2
         rectrc.width += 1
         rectrc.bottom = 500
-    if rectrc.top <= 0 and rect.bottom >= 500 and rect.top <= 500:
-        rectrc.height -= 2
-        rectrc.width -= 1
